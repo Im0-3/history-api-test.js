@@ -1,0 +1,21 @@
+/*
+#styleguide
+
+
+```
+<i class=" aaa"></i>
+<i class=" bbb"></i>
+```
+*/
+$aaa: 0px 0px 0px 0px 213px 92px 213px 200px 'sprite.png';
+$bbb: 0px 92px 0px -92px 139px 108px 213px 200px 'sprite.png';
+
+. {
+    display: inline-block;
+    .aaa {
+        @include sprite($aaa);
+    }
+    .bbb {
+        @include sprite($bbb);
+    }
+}
